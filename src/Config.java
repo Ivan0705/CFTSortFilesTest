@@ -29,15 +29,14 @@ class Config {
                 }
             } else {
                 if (outputFile == null) {
-                    outputFile = "OUTPUT/" + arg;
+                    outputFile = arg;
 
                 } else {
-                    inputFiles.add("INPUT/" + arg);
+                    inputFiles.add(arg);
                 }
             }
         }
     }
-
 
 
 }
