@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CFTSortFilesTest:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CFTSortFilesTest_jar</output-path>
+    <root id="archive" name="CFTSortFilesTest.jar">
+      <element id="module-output" name="CFTSortFilesTest" />
+    </root>
+  </artifact>
+</component>
