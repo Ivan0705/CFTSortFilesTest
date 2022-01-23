@@ -55,7 +55,7 @@ public class SortImpl implements Sort, DequeSubscriber {
         }
 
         if (Arrays.stream(arrayString).anyMatch(Objects::isNull))
-            throw new IllegalArgumentException("Не прошла проверка на NULL! ");
+            throw new IllegalArgumentException("Не прошла проверка на NULL!");
 
         if (Main.config.optionS) {
             if (Main.config.optionA) {
@@ -135,7 +135,7 @@ public class SortImpl implements Sort, DequeSubscriber {
                 actualDeque = getActualDeque(deques);
                 if (failedSortOrder(actualDeque)) {
                     deques.remove(actualDeque);
-                    out.println("Нарушен порядк сортировки в одном из входных файлов");
+                    out.println("Нарушен порядок сортировки в одном из входных файлов");
                     continue;
                 }
             } catch (NumberFormatException e) {

@@ -11,7 +11,6 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingDeque;
 
 public class FileRead implements Runnable, Closeable {
-
     private String filename;
     private FileInputStream inputStream;
     private Scanner scanner;
