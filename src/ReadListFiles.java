@@ -23,8 +23,8 @@ public class ReadListFiles implements Closeable {
     void toRead(List<String> inputFiles) throws InterruptedException, IOException {
 
         for (String file : inputFiles) {
-            FileRead worker = new FileRead(file, dequePoint);
-            if (!worker.isFailed()) fileReads.add(worker);
+            FileRead fileRead = new FileRead(file, dequePoint);
+            if (!fileRead.isFailed()) fileReads.add(fileRead);
         }
         if (fileReads.size() == 0) {
             throw new IllegalArgumentException("Нет доступных для обработки входных файлов.");

@@ -59,15 +59,15 @@ public class SortImpl implements Sort, DequeSubscriber {
 
         if (Main.config.optionS) {
             if (Main.config.optionA) {
-                return arrayDeque[findIndexForStringsMinValue(arrayString)];//массив строк минимального значения
+                return arrayDeque[findIndexForStringsMinValue(arrayString)];
             } else {
-                return arrayDeque[findIndexForStringsMaxValue(arrayString)];//массив строк максимального значения
+                return arrayDeque[findIndexForStringsMaxValue(arrayString)];
             }
         } else {
             if (Main.config.optionA) {
-                return arrayDeque[findIndexForIntegersMinValue(arrayString)];//массив чисел минимального значения
+                return arrayDeque[findIndexForIntegersMinValue(arrayString)];
             } else {
-                return arrayDeque[findIndexForIntegersMaxValue(arrayString)];//массив чисел максимального значения
+                return arrayDeque[findIndexForIntegersMaxValue(arrayString)];
             }
         }
     }
@@ -123,7 +123,7 @@ public class SortImpl implements Sort, DequeSubscriber {
 
 
     @Override
-    public void doSort(List<BlockingDeque<String>> deques) throws InterruptedException, IOException {
+    public void doSort(List<BlockingDeque<String>> deques) throws InterruptedException {
         while (true) {
             cleanDeques(deques);
             if (deques.size() == 0) {
